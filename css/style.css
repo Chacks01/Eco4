@@ -1,6 +1,3 @@
-body {
-  background-color: rgb(207, 201, 201);
-}
 body header {
   background-color: white;
 }
@@ -13,7 +10,6 @@ body header .btn-primary {
 }
 body .about {
   height: 92vh;
-  background-color: 207, 201, 201;
 }
 body .col {
   margin-top: 80px;
@@ -40,7 +36,6 @@ body .mission {
   height: 80vh;
   background-image: url(/img/models.png);
   background-size: cover;
-  background-color: rgb(207, 201, 201);
 }
 body .mission-container {
   margin-top: 30px;
