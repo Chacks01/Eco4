@@ -8,7 +8,7 @@ body header .btn-primary {
   background-color: green;
   border: none;
 }
-body .about {
+body .about-container {
   height: 92vh;
 }
 body .btn-2 {
@@ -24,16 +24,65 @@ body .mission {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 80vh;
-  background-image: url(/img/models.png);
+  background-color: dimgray;
+  background-image: url("/img/models.png");
   background-size: cover;
+  background-blend-mode: multiply;
+  padding: 20px 0;
+  color: white;
 }
 body .mission-container h1 {
   margin-top: 100px;
 }
+body .left {
+  margin-top: 70px;
+}
 body .features {
   margin-top: 60px;
 }
+body .image-container3 {
+  background: lightgrey;
+  padding: 30px;
+  border-radius: 30px;
+}
+body .image-container3 h3 {
+  margin: -1px;
+}
+body .image-container3 p {
+  margin: -1px;
+  margin-bottom: 2px;
+}
+body .image-container3 ol {
+  margin: px;
+  list-style-type: decimal;
+}
 
 .questions {
-  margin-top: 0px;
+  margin-top: 40px;
+  padding: 40px 0;
+}
+.questions .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  width: 70%;
+}
+.questions .form form {
+  height: 40vh;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.questions .form form textarea {
+  width: 85%;
+}
+.questions .form form input {
+  width: 85%;
+}
+.questions .form form button {
+  width: 85%;
 }/*# sourceMappingURL=style.css.map */
