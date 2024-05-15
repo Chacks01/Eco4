@@ -1,26 +1,33 @@
-body header {
+header {
   background-color: white;
 }
-body header .nav-link {
+header .nav-link {
   color: green;
 }
-body header .btn-primary {
+header .btn-primary {
   background-color: green;
   border: none;
 }
-body .about-container {
+
+.about-container {
   height: 92vh;
 }
-body .btn-2 {
+.about-container .row .left {
+  padding-top: 140px;
+}
+
+.btn-2 {
   background-color: green;
   color: green;
   width: 150px;
 }
-body .btn-3 {
+
+.btn-3 {
   color: green;
   padding-left: 0;
 }
-body .mission {
+
+.mission {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 80vh;
@@ -31,28 +38,32 @@ body .mission {
   padding: 20px 0;
   color: white;
 }
-body .mission-container h1 {
+
+.mission-container h1 {
   margin-top: 100px;
 }
-body .left {
+
+.left {
   margin-top: 70px;
 }
-body .features {
+
+.features {
   margin-top: 60px;
 }
-body .image-container3 {
+
+.image-container3 {
   background: lightgrey;
   padding: 30px;
   border-radius: 30px;
 }
-body .image-container3 h3 {
+.image-container3 h3 {
   margin: -1px;
 }
-body .image-container3 p {
+.image-container3 p {
   margin: -1px;
   margin-bottom: 2px;
 }
-body .image-container3 ol {
+.image-container3 ol {
   margin: px;
   list-style-type: decimal;
 }
@@ -85,4 +96,15 @@ body .image-container3 ol {
 }
 .questions .form form button {
   width: 85%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: green;
+}
+.footer p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

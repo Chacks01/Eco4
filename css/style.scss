@@ -1,4 +1,4 @@
-body{
+
    
 
 // header main
@@ -23,6 +23,12 @@ body{
 .about-container{
         
         height: 92vh;
+
+        .row{
+            .left{
+                padding-top: 140px;
+            }
+        }
       
     }
 
@@ -99,7 +105,7 @@ body{
 
 
 
-}
+
 
 .questions{
         margin-top: 40px;
@@ -137,6 +143,18 @@ body{
                     width: 85%;
                 }
             }
+        }
+    }
+
+    .footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: green;
+
+        p{
+            color: white;
         }
     }
    
