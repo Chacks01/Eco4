@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 header {
   background-color: white;
 }
@@ -10,16 +64,29 @@ header .btn-primary {
 }
 
 .about-container {
-  height: 92vh;
+  margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-container .row .left {
-  padding-top: 140px;
+  padding-top: 40px;
+}
+.about-container .row .right {
+  margin-top: -40px;
+}
+.about-container .row .right img {
+  height: 17rem;
 }
 
-.btn-2 {
+.container .row .col-md-4 .image-container img {
+  height: 23.5rem;
+}
+.container .row .col-md-4 .image-container .btn {
   background-color: green;
-  color: green;
   width: 150px;
+  color: white;
+  margin-bottom: 2rem;
 }
 
 .btn-3 {
@@ -68,9 +135,35 @@ header .btn-primary {
   list-style-type: decimal;
 }
 
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.features .container .row .centre-items .text-container {
+  background-color: lightgray;
+  margin-bottom: 3rem;
+  border-radius: 30px;
+}
+.features .container .row .second .text-container {
+  background-color: lightgray;
+  border-radius: 30px;
+  margin-bottom: 3rem;
+}
+
 .questions {
   margin-top: 40px;
   padding: 40px 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+.questions .container .row {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .questions .form {
   display: flex;
@@ -78,6 +171,7 @@ header .btn-primary {
   align-items: center;
   background-color: lightgrey;
   width: 70%;
+  height: 20rem;
 }
 .questions .form form {
   height: 40vh;
@@ -107,4 +201,237 @@ header .btn-primary {
 }
 .footer p {
   color: white;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  header {
+    background-color: white;
+  }
+  header .nav-link {
+    color: green;
+  }
+  header .btn-primary {
+    background-color: green;
+    border: none;
+  }
+  .about-container {
+    height: 92vh;
+  }
+  .about-container .row .left {
+    padding-top: 140px;
+  }
+  .about-container .row .right {
+    display: none;
+  }
+  .btn-2 {
+    background-color: green;
+    color: green;
+    width: 150px;
+  }
+  .btn-3 {
+    color: green;
+    padding-left: 0;
+  }
+  .mission {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 80vh;
+    background-color: dimgray;
+    background-image: url("/img/models.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 20px 0;
+    color: white;
+  }
+  .mission-container h1 {
+    margin-top: 100px;
+  }
+  .left {
+    margin-top: 70px;
+  }
+  .features {
+    margin-top: 60px;
+  }
+  .image-container3 {
+    background: lightgrey;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  .image-container3 h3 {
+    margin: -1px;
+  }
+  .image-container3 p {
+    margin: -1px;
+    margin-bottom: 2px;
+  }
+  .image-container3 ol {
+    margin: px;
+    list-style-type: decimal;
+  }
+  .questions {
+    margin-top: 40px;
+    padding: 40px 0;
+  }
+  .questions .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    width: 70%;
+  }
+  .questions .form form {
+    height: 40vh;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .questions .form form textarea {
+    width: 85%;
+  }
+  .questions .form form input {
+    width: 85%;
+  }
+  .questions .form form button {
+    width: 85%;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: green;
+  }
+  .footer p {
+    color: white;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  header {
+    background-color: white;
+  }
+  header .nav-link {
+    color: green;
+  }
+  header .btn-primary {
+    background-color: green;
+    border: none;
+  }
+  .about-container {
+    height: 92vh;
+  }
+  .about-container .row .left {
+    padding-top: 140px;
+  }
+  .about-container .row .right img {
+    height: 100%;
+  }
+  .btn-2 {
+    background-color: green;
+    color: green;
+    width: 150px;
+  }
+  .btn-3 {
+    color: green;
+    padding-left: 0;
+  }
+  .mission {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 80vh;
+    background-color: dimgray;
+    background-image: url("/img/models.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 20px 0;
+    color: white;
+  }
+  .mission-container h1 {
+    margin-top: 100px;
+  }
+  .left {
+    margin-top: 70px;
+  }
+  .features {
+    margin-top: 60px;
+  }
+  .image-container3 {
+    background: lightgrey;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  .image-container3 h3 {
+    margin: -1px;
+  }
+  .image-container3 p {
+    margin: -1px;
+    margin-bottom: 2px;
+  }
+  .image-container3 ol {
+    margin: px;
+    list-style-type: decimal;
+  }
+  .questions {
+    margin-top: 40px;
+    padding: 40px 0;
+  }
+  .questions .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    width: 70%;
+  }
+  .questions .form form {
+    height: 40vh;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .questions .form form textarea {
+    width: 85%;
+  }
+  .questions .form form input {
+    width: 85%;
+  }
+  .questions .form form button {
+    width: 85%;
+  }
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: green;
+  }
+  .footer p {
+    color: white;
+  }
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
